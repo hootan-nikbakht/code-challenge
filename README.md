@@ -12,12 +12,13 @@ This challenge took me more than 2 hours (~6 hours) to complete.
 
 ## Design & Library choices
 
-As the instructions of the assignment suggested I broked down this assignment in 3 main parts.
+following instructions of this challenge, I broked down this assignment in parts:
 
 1. Created a twitter authentication layer that allows seamless login with twitter omniauth api
 2. Included twitter library to consume twitter api. Created a class models/tweet.rb, which holds required fields for a tweets as well as static method to get tweets.
 3. Deployed application to Heroku by following a basic tutorial.
-4. Bug fixing & clean up of code
+4. Caching identical API handle query calls for 5 mins to avoid hammering the Twitter API. I used [Rails built-in](http://guides.rubyonrails.org/caching_with_rails.html) Cache API & memory cache_store.
+5. Bug fixing & clean up of code
 
 Incorporated the following gems:
 
