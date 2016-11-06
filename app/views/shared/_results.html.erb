@@ -1,0 +1,21 @@
+<div class="search-content" xmlns="http://www.w3.org/1999/html">
+  <br>
+  <% if @tweets.empty? %>
+      <b>No tweets for handle: "<%= @handle_query %>"</b>
+  <% else %>
+      <b>
+        Fetching tweets for handle: "<%= @handle_query %>"
+      </b><br><br>
+      <% @tweets.each do |t| %>
+        <main id="container">
+          <h3><%= t.created_at.to_date.strftime('%b %d, %y') %></h3>
+          <p class="detail">
+            <%= t.name %> <a href="http://twitter.com/<%=t.username%>" target="_blank">@<%= t.username %></a>
+          </p>
+            <div class="content">
+              <%= t.body.html_safe %>
+            </div>
+        </main>
+      <% end %>
+  <% end %>
+</div>
