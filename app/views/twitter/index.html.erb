@@ -1,0 +1,9 @@
+<p>
+  <% if logged_in? %>
+      Welcome, <b>@<%= current_user['username'] %></b>
+
+  <% else %>
+      To access this application, please
+      <%= link_to 'login with twitter', 'auth/twitter/' %>
+  <% end %>
+</p>
