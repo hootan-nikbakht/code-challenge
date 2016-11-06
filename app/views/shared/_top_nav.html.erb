@@ -2,7 +2,7 @@
   <div class="nav">
     <ul>
       <% if logged_in? %>
-          <!--<li style="text-align: left !important" class="news"><p>Welcome, @<%= current_user['username'] %></p></li>-->
+          <li class="news"><img class="size32 avatar" src="<%= current_user['image'] %>"> </li>
           <li class="news"><%= link_to 'Log out', sign_out_path, :method => :delete %></li>
 
       <% else %>

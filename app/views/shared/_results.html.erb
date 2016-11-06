@@ -8,7 +8,7 @@
       </b><br><br>
       <% @tweets.each do |t| %>
         <main id="container">
-          <h3><%= t.created_at.to_date.strftime('%b %d, %y') %></h3>
+          <h3><%= t.created_at %></h3>
           <p class="detail">
             <%= t.name %> <a href="http://twitter.com/<%=t.username%>" target="_blank">@<%= t.username %></a>
           </p>

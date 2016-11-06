@@ -10,11 +10,17 @@ This challenge is designed to test my skills with:
 
 This challenge took me more than 2 hours (~6 hours) to complete.
 
-## Gems & Library choices
+## Design & Library choices
 
-For this assignment I incorporated below gems:
+As the instructions of the assignment suggested I broked down this assignment in 3 main parts.
 
-* [devise](https://rubygems.org/gems/devise/versions/4.2.0) - user registration and authentication in rails.
+1. Created a twitter authentication layer that allows seamless login with twitter omniauth api
+2. Included twitter library to consume twitter api. Created a class models/tweet.rb, which holds required fields for a tweets as well as static method to get tweets.
+3. Deployed application to Heroku by following a basic tutorial.
+4. Bug fixing & clean up of code
+
+Incorporated the following gems:
+
 * [omniauth](https://rubygems.org/gems/omniauth/versions/1.3.1) - A generalized Rack framework for multiple-provider authentication.
 * [omniauth-twitter](https://rubygems.org/gems/omniauth-twitter) - OmniAuth strategy for Twitter
 * [twitter](https://rubygems.org/gems/twitter) - Ruby interface to the Twitter API.
@@ -22,6 +28,9 @@ For this assignment I incorporated below gems:
 
 ## Setting up the environment locally
 
+    bundle install
+    rake db:migrate
+    rails s
 
 ## [Heroku Deployment](http://docs.railsbridge.org/intro-to-rails/deploying_to_heroku)
 

@@ -13,15 +13,13 @@ class Tweet
       begin
         client(user).user_timeline(handle).take(limit).each do |t|
           text = link_to_mentions (t.text)
-          t = Tweet.new(t.user.name, t.user.screen_name, text, t.created_at)
+          created_at = t.created_at.to_date.strftime('%b %d, %y')
+          t = Tweet.new(t.user.name, t.user.screen_name, text, created_at)
+
           tweets << t
         end if handle
       rescue; end
       tweets
-    end
-
-    def link_to_mentions(text)
-      text.gsub(/@(\w+)/, "<a target='_blank' href='https://twitter.com/%s'>%s</a>" % %W(\\1 \\1))
     end
 
     def client(user)
@@ -32,8 +30,12 @@ class Tweet
         config.access_token_secret = user.secret
       end
     end
+
+    private
+      def link_to_mentions(text)
+        text.gsub(/@(\w+)/, "<a target='_blank' href='https://twitter.com/%s'>%s</a>" % %W(\\1 \\1))
+      end
+
   end
-
-
 
 end
