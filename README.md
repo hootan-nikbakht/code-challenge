@@ -23,9 +23,13 @@ For this assignment I incorporated below gems:
 ## Setting up the environment locally
 
 
-## Heroku Deployment
+## [Heroku Deployment](http://docs.railsbridge.org/intro-to-rails/deploying_to_heroku)
 
-
+    heroku login
+    heroku create <app-name>
+    git push heroku master
+    heroku run rake db:migrate
+    heroku open
 
 ## Heroku Site
 
