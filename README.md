@@ -47,4 +47,4 @@ Incorporated the following gems:
 
 ## Test Suite Execution instructions
 
-N/A
+    rake spec
