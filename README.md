@@ -28,6 +28,7 @@ Incorporated the following gems:
 * [twitter](https://rubygems.org/gems/twitter) - Ruby interface to the Twitter API.
 * [figaro](https://rubygems.org/gems/figaro/versions/1.1.1) - Rails app configuration using ENV and a single YAML file.
 * [rspec-rails](https://rubygems.org/gems/rspec-rails/versions/3.4.2) - rspec-rails is a testing framework for Rails.
+* [rails_12factor](https://rubygems.org/gems/rails_12factor/versions/0.0.3) - Warning while deploying recommended by Heroku
 
 ## Setting up the environment locally
 

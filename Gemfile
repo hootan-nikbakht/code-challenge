@@ -25,6 +25,7 @@ gem 'omniauth', '~> 1.3', '>= 1.3.1'
 gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
 gem 'twitter', '~> 5.16'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'rails_12factor', '~> 0.0.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
