@@ -1,4 +1,4 @@
-# twitter-code-challenge
+# code-challenge
 
 This challenge is designed to test my skills with:
 
