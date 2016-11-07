@@ -45,7 +45,7 @@ Incorporated the following gems:
 
 ## Heroku Site
 
-* [hootan-sc](https://hootan-sc.herokuapp.com)
+[https://hootan-sc.herokuapp.com](https://hootan-sc.herokuapp.com)
 
 ## Test Suite Execution instructions
 
