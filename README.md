@@ -31,6 +31,8 @@ Incorporated the following gems:
 
 ## Setting up the environment locally
 
+    git clone https://github.com/hootan-nikbakht/code-challenge.git
+    cd code-challenge
     bundle install
     rake db:migrate
     rails s
