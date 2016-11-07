@@ -11,14 +11,14 @@ class Tweet
     def get_tweets(user=nil, handle=nil, limit=25)
       tweets = []
       begin
-        tweets = Rails.cache.fetch("#{handle}", expires_in: 5.minutes) do
+        tweets = Rails.cache.fetch("#{handle.strip}", expires_in: 5.minutes) do
           client(user).user_timeline(handle).take(limit).each do |t|
             text = link_to_mentions (t.text)
             created_at = t.created_at.to_date.strftime('%b %d, %y')
             t = Tweet.new(t.user.name, t.user.screen_name, text, created_at)
 
             tweets << t
-          end if handle
+          end
 
           tweets
         end
