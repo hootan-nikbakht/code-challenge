@@ -12,13 +12,14 @@ This challenge took me more than 2 hours (~6 hours) to complete.
 
 ## Design & Library choices
 
-following instructions of this challenge, I broked down this assignment in parts:
+Following instructions of this challenge, I broked down this assignment in parts:
 
 1. Created a twitter authentication layer that allows seamless login with twitter omniauth api
-2. Included twitter library to consume twitter api. Created a class models/tweet.rb, which holds required fields for a tweets as well as static method to get tweets.
-3. Deployed application to Heroku by following a basic tutorial.
-4. Caching identical API handle query calls for 5 mins to avoid hammering the Twitter API. I used [Rails built-in](http://guides.rubyonrails.org/caching_with_rails.html) Cache API & memory cache_store.
-5. Bug fixing & clean up of code
+2. Included twitter library to consume twitter api. Created a class models/tweet.rb, which acts as a tweet object holding required field for the view.
+3. Deployed application to Heroku by following a [basic tutorial](http://docs.railsbridge.org/intro-to-rails/deploying_to_heroku).
+4. Cached identical API handle query calls for 5 minutes to avoid hammering the Twitter API. Incorporated [Rails built-in](http://guides.rubyonrails.org/caching_with_rails.html) Cache API & memory cache_store.
+5. Setup rspec-rails gem & implemented two negative test cases.
+6. Bug fixing & clean up.
 
 Incorporated the following gems:
 
@@ -26,6 +27,7 @@ Incorporated the following gems:
 * [omniauth-twitter](https://rubygems.org/gems/omniauth-twitter) - OmniAuth strategy for Twitter
 * [twitter](https://rubygems.org/gems/twitter) - Ruby interface to the Twitter API.
 * [figaro](https://rubygems.org/gems/figaro/versions/1.1.1) - Rails app configuration using ENV and a single YAML file.
+* [rspec-rails](https://rubygems.org/gems/rspec-rails/versions/3.4.2) - rspec-rails is a testing framework for Rails.
 
 ## Setting up the environment locally
 
