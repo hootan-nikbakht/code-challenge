@@ -1,6 +1,4 @@
-# code-challenge
-
-This challenge is designed to test my skills with:
+# Twitter-Authentication-Layer
 
 * Ruby on Rails
 * Object-Oriented Design
